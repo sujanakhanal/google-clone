@@ -1,0 +1,811 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: visible;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* dark-mode-section */
+
+body.dark-mode {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+body.dark-mode .navbar {
+  background-color: #020617;
+}
+body.dark-mode .navbar a {
+  color: #e5e7eb;
+}
+
+body.dark-mode .navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar .gmail-images {
+  color: #e5e7eb;
+}
+
+body.dark-mode .icons {
+  color: white;
+}
+
+body.dark-mode .lab-icon .icon-text {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .grid-icon .icon-text {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .user-icon .icon-text {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode .share-icon {
+  color: white;
+  background-color: #1e293b;
+}
+
+body.dark-mode .search-box {
+  background-color: rgb(222, 219, 219);
+  color: black;
+}
+
+body.dark-mode .search-box input {
+  background-color: rgb(222, 219, 219);
+}
+
+body.dark-mode .microphone {
+  color: white;
+}
+
+body.dark-mode .microphone .icon-text {
+  background-color: rgb(51, 50, 50);
+  color: rgb(192, 192, 192);
+}
+
+body.dark-mode .camera {
+  color: white;
+}
+
+body.dark-mode .camera .icon-text {
+  background-color: rgb(51, 50, 50);
+  color: rgb(192, 192, 192);
+}
+
+body.dark-mode .main-buttons button {
+  background-color: #1e293b;
+  color: #e5e7eb;
+}
+
+body.dark-mode .main-buttons button:hover {
+  background-color: #334155;
+}
+
+body.dark-mode .dark-bg i {
+  color: #e5e7eb;
+}
+
+body.dark-mode .nepal {
+  color: white;
+  background-color: #020617;
+}
+
+body.dark-mode .left-foot-opt a {
+  color: white;
+}
+
+body.dark-mode .right-foot-opt a {
+  color: white;
+}
+
+body.dark-mode .last-foot {
+  background-color: #020617;
+  border-top: 1px solid rgb(46, 45, 45);
+}
+
+/* header-section */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 52px;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #000000de;
+}
+
+.gmail-images {
+  display: flex;
+  gap: 2rem;
+  margin-right: 3rem;
+}
+
+.gmail-images #gmail:hover {
+  text-decoration: underline;
+}
+
+.gmail-images #images:hover {
+  text-decoration: underline;
+}
+
+.dark-bg {
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-right: 5rem;
+}
+
+.lab-icon {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.lab-icon .icon-text {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7a7a7a;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.grid-icon {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.grid-icon .icon-text {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7a7a7a;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.user-icon {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+.user-icon .icon-text {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7a7a7a;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.icons a {
+  padding: 0.9rem;
+}
+
+.icons a:hover {
+  border-radius: 50%;
+  background-color: rgb(235, 235, 235);
+}
+
+.icons .lab-icon:hover .icon-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.icons .grid-icon:hover .icon-text {
+  opacity: 1;
+  visibility: visible;
+}
+.icons .user-icon:hover .icon-text {
+  opacity: 1;
+  visibility: visible;
+}
+.fa-solid {
+  font-size: 2.5rem;
+}
+
+/* main-section */
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.google-img {
+  max-width: 800px;
+  margin-top: 5rem;
+}
+
+.google-img img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.share-icon {
+  background-color: rgb(238, 236, 236);
+  border-radius: 50%;
+  margin-top: 15rem;
+  padding: 0.8rem;
+  color: #3a3b3b;
+  cursor: pointer;
+}
+
+/* search-box  */
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 800px;
+
+  width: 90%;
+  height: 52px;
+
+  padding: 1.5rem;
+  border: 1px solid rgb(232, 231, 231);
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-radius: 5rem;
+  margin-top: 2rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.search-box:hover {
+  box-shadow: 0 4px 12px rgba(32, 33, 36, 0.35);
+}
+
+.input-values {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.input-values input {
+  border: transparent;
+  outline: none;
+
+  min-width: 0;
+  font-size: 1.6rem;
+  flex: 1;
+}
+
+.input-values i {
+  font-size: 1.8rem;
+  color: #3a3b3b;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.microphone {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.microphone .icon-text {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3c3c3c;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.microphone:hover .icon-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.camera {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+}
+
+.camera .icon-text {
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3c3c3c;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.camera:hover .icon-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ai-mode {
+  display: flex;
+
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+  padding: 0.4rem 1rem;
+  padding: 0.2em;
+  border-radius: 5rem;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  margin: auto;
+  border: 1px solid transparent;
+}
+
+.ai-mode i {
+  font-size: 1.8rem;
+  color: #3a3b3b;
+  cursor: pointer;
+}
+
+.ai-mode p {
+  font-size: 1.4rem;
+}
+
+.ai-mode:hover {
+  border-color: rgb(250, 88, 88);
+}
+
+/* button-section */
+.main-buttons {
+  display: flex;
+  padding: 18px;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.main-buttons button {
+  background-color: rgb(242, 242, 242);
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 1rem;
+  color: rgb(61, 60, 60);
+}
+
+.first-btn button {
+  font-size: 2rem;
+}
+
+.first-btn button:hover {
+  border-color: rgb(215, 215, 215);
+}
+
+.second-btn button {
+  font-size: 2rem;
+}
+
+.second-btn button:hover {
+  border-color: rgb(215, 215, 215);
+}
+
+/* google-offer-section */
+.nepali-english {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.google-offer {
+  font-size: 1.3rem;
+}
+.checkbox-nepali {
+  color: rgb(81, 81, 241);
+  font-size: 1.3rem;
+}
+
+/* footer-section */
+
+.nepal {
+  min-height: 50px;
+  background-color: rgb(235, 235, 235);
+  color: #1f1f1f;
+  font-size: 1.5rem;
+  padding: 1.5rem 3rem;
+}
+
+.last-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  background-color: rgb(235, 235, 235);
+  border-top: 1px solid rgb(211, 211, 211);
+}
+
+.left-foot-opt a {
+  color: #1f1f1f;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+.left-foot-opt a:hover {
+  text-decoration: underline;
+}
+.right-foot-opt a {
+  color: #1f1f1f;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+.right-foot-opt a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+  .last-foot {
+    justify-content: space-evenly;
+  }
+  .share-icon {
+    margin-top: 6rem;
+  }
+  .google-img {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar {
+    gap: 1rem;
+  }
+  .navbar a {
+    font-size: 1.5rem;
+  }
+  .gmail-images {
+    gap: 1.8rem;
+    margin-right: 1.3rem;
+  }
+  .icons {
+    height: 30px;
+    gap: 1.1rem;
+    margin-right: 3rem;
+  }
+  .fa-solid {
+    font-size: 2rem;
+  }
+
+  .img {
+    max-width: 800px;
+    width: 50%;
+  }
+  .fa-solid .fa-share-nodes {
+    font-size: 1rem;
+  }
+  .share-icon {
+    margin-top: 6rem;
+  }
+
+  .google-img {
+    margin-top: 2rem;
+  }
+
+  .ai-mode p {
+    font-size: 1rem;
+  }
+
+  .search-box {
+    height: 48px;
+    padding: 0 0.8rem;
+  }
+
+  .input-values i {
+    font-size: 1.4rem;
+  }
+  .first-btn button {
+    font-size: 1.5rem;
+  }
+
+  .second-btn button {
+    font-size: 1.5rem;
+  }
+  .google-offer {
+    font-size: 1rem;
+  }
+  .checkbox-nepali {
+    font-size: 1rem;
+  }
+
+  .nepal {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .last-foot {
+    justify-content: space-evenly;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .left-foot-opt a {
+    padding: 1rem;
+  }
+
+  .right-foot-opt a {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 749px) {
+  .nepal {
+    padding: 2rem 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .last-foot {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    gap: 0.5rem;
+  }
+  .navbar a {
+    font-size: 1.2rem;
+  }
+  .gmail-images {
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+  .icons {
+    height: 20px;
+    gap: 0.8rem;
+    margin-right: 2rem;
+  }
+  .fa-solid {
+    font-size: 1.5rem;
+  }
+  .fa-solid .fa-share-nodes {
+    font-size: 5rem;
+  }
+  .share-icon {
+    margin-top: 6rem;
+  }
+  .google-img {
+    margin-top: 2rem;
+  }
+
+  .ai-mode p {
+    font-size: 0.9rem;
+  }
+
+  .search-box {
+    height: 48px;
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+
+  .input-values i {
+    font-size: 1rem;
+  }
+
+  .input-values input {
+    min-width: 0;
+    font-size: 1rem;
+    flex: 1;
+  }
+  .ai-mode i {
+    font-size: 1rem;
+  }
+  .first-btn button {
+    font-size: 1.5rem;
+  }
+
+  .second-btn button {
+    font-size: 1.5rem;
+  }
+  .google-offer {
+    font-size: 1rem;
+  }
+  .checkbox-nepali {
+    font-size: 1rem;
+  }
+  .nepal {
+    font-size: 1.2rem;
+    padding: 2rem 2rem;
+  }
+
+  .last-foot {
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .left-foot-opt a {
+    padding: 1rem;
+  }
+
+  .right-foot-opt a {
+    padding: 1rem;
+  }
+  .icon-text {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .left-foot-opt a {
+    padding: 1rem;
+  }
+
+  .right-foot-opt a {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 345px) {
+  .navbar {
+    gap: 0.2rem;
+  }
+  .navbar a {
+    font-size: 1rem;
+  }
+  .gmail-images {
+    gap: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .icons {
+    height: 10px;
+    gap: 0.5rem;
+    margin-right: 0.8rem;
+  }
+  .fa-solid {
+    font-size: 0.8rem;
+  }
+  .fa-solid .fa-share-nodes {
+    font-size: 2rem;
+  }
+  .share-icon {
+    margin-top: 5rem;
+  }
+
+  .ai-mode p {
+    font-size: 0.5rem;
+  }
+
+  .search-box {
+    height: 40px;
+    padding: 0 0.2rem;
+    gap: 0.3rem;
+  }
+
+  .input-values i {
+    font-size: 0.5rem;
+  }
+
+  .input-values input {
+    min-width: 0;
+    font-size: 0.5rem;
+    flex: 1;
+  }
+  .ai-mode i {
+    font-size: 0.5rem;
+  }
+  .first-btn button {
+    font-size: 1rem;
+  }
+
+  .second-btn button {
+    font-size: 1rem;
+  }
+  .google-offer {
+    font-size: 0.6rem;
+  }
+  .checkbox-nepali {
+    font-size: 0.4rem;
+  }
+  .nepal {
+    font-size: 1rem;
+    padding: 2rem 2rem;
+  }
+
+  .last-foot {
+    justify-content: space-evenly;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .left-foot-opt a {
+    padding: 0.8rem;
+  }
+
+  .right-foot-opt a {
+    padding: 0.8rem;
+  }
+  .icon-text {
+    display: none;
+  }
+}
